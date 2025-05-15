@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.tarjeta {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.contenido {
+    text-align: center;
+}
+
+.titulo {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.frase {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.mensaje p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.final {
+    font-weight: bold;
+    color: #007bff; /* Un toque de color formal */
+}
+
+/* Estilos para la interactividad */
+.tarjeta {
+    cursor: pointer;
+}
+
+.tarjeta.active {
+    background-color: #e0f7fa; /* Un color formal y suave al activarse */
+    border: 1px solid #b2ebf2;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .tarjeta {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    .frase {
+        font-size: 0.9em;
+    }
+
+    .mensaje p {
+        font-size: 0.9em;
+    }
+}
